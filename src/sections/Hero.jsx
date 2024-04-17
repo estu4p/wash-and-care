@@ -3,17 +3,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { bg_hero, img_hero } from "@/assets/images";
+import {
+  bg_hero,
+  img_hero,
+  sponsor1,
+  sponsor2,
+  sponsor3,
+  sponsor4,
+} from "@/assets/images";
+import Slider_Hero from "@/components/Slider_Hero";
 
 const Hero = () => {
   return (
     <section className="max-container padding-container w-full pt-28 md:pt-32 lg:p-0">
       <div className="flexCenter flex-col lg:flex-row lg:gap-[104px] lg:items-start">
         {/* left */}
-        <div className="flexCenter flex-col lg:w-[70%] lg:ps-20 3xl:ps-0 lg:h-[620px]">
+        <div className="flexCenter flex-col lg:w-[70%] lg:ps-20 3xl:ps-0 lg:h-[620px] lg:mt-12">
           <h1 className="font-bold text-[40px] text-biru-700 capitalize leading-tight">
             the cleanliness of your shoes{" "}
-            <span className="text-outline">is part of your faith</span>
+            <span className="text-outline font-sans text-[46px]">
+              is part of your faith
+            </span>
           </h1>
           <p className="mt-6 text-biru-100">
             Kami melakukan perawatan secara profesional, dengan teknik khusus,
@@ -37,9 +47,19 @@ const Hero = () => {
               Location
             </Link>
           </div>
+          {/* our sponsorship */}
+          <div className="mt-8 w-full">
+            <span className="text-biru-200">Our Sponsorship</span>
+            <div className="flexStart gap-x-8 flex-wrap">
+              <Image src={sponsor1} alt="sponsor 1" width={83} height={64} />
+              <Image src={sponsor2} alt="sponsor 2" width={83} height={64} />
+              <Image src={sponsor3} alt="sponsor 3" width={83} height={64} />
+              <Image src={sponsor4} alt="sponsor 4" width={83} height={64} />
+            </div>
+          </div>
         </div>
         {/* right */}
-        <div className="mt-12 w-full md:px-12 lg:mt-0 lg:px-0 ">
+        <div className="relative mt-12 w-full md:px-12 lg:mt-0 lg:px-0 overflow-hidden">
           <Image
             src={img_hero}
             alt="image hero"
@@ -47,6 +67,12 @@ const Hero = () => {
             height={720}
             className="w-full rounded-3xl object-cover object-center h-[452px] brightness-[0.85] md:h-[523px] lg:rounded-none lg:rounded-bl-[80px] lg:h-[620px]"
           />
+          {/* Slider Hero */}
+          <div className="absolute bottom-9 left-12 flexStart gap-4 ">
+            <Slider_Hero />
+            <Slider_Hero />
+            <Slider_Hero />
+          </div>
         </div>
         <Image
           src={bg_hero}

@@ -18,6 +18,10 @@
     @apply flex items-center justify-start;
   }
 
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
@@ -28,8 +32,9 @@
 }
 
 .text-outline {
-  color: white;
-  background-color: transparent;
-  text-shadow: -1px -1px 0 #1b1c57, 1px -1px 0 #1b1c57, -1px 1px 0 #1b1c57,
-    1px 1px 0 #1b1c57;
+  color: transparent;
+  /* background-color: transparent; */
+  /* text-shadow: -1px -1px 0 #1b1c57, 1px -1px 0 #1b1c57, -1px 1px 0 #1b1c57,
+    1px 1px 0 #1b1c57; */
+  -webkit-text-stroke: 1px black;
 }
