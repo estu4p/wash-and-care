@@ -8,6 +8,9 @@ import sponsor3 from "./traveloka_logo 4.png";
 import sponsor4 from "./traveloka_logo 5.png";
 import promo1 from "./promo.jpeg";
 import promo2 from "./Sport Shoe Cleaning.jpeg";
+import img_our_service from "./Img.png";
+import bg_vector1 from "./Vector.png";
+import bg_vector2 from "./Vector-1.png";
 
 export {
   logo,
@@ -20,4 +23,7 @@ export {
   sponsor4,
   promo1,
   promo2,
+  img_our_service,
+  bg_vector1,
+  bg_vector2,
 };
