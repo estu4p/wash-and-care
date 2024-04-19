@@ -11,8 +11,8 @@ const Navbar = () => {
     <nav className="absolute w-full padding-container py-5 z-50">
       <div className="flexBetween max-container">
         <Link href="/" className="flexCenter gap-3 ">
-          <Image src={logo} alt="Logo WNC" width={36} height={36} />
-          <span className="font-bold text-biru-700">Wash & Care</span>
+          <Image src={logo} alt="Logo WNC" width={48} height={48} />
+          <span className="font-bold text-xl text-biru-700">Wash & Care</span>
         </Link>
         <div className="hidden lg:flexBetween gap-14">
           <ul className="flexBetween gap-6 font-semibold text-white text-sm">
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <FontAwesomeIcon
           icon={faBars}
-          className="text-biru-700 w-6 lg:hidden"
+          className="text-biru-700 w-7 h-7 lg:hidden"
         />
       </div>
     </nav>

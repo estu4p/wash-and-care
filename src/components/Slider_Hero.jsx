@@ -2,7 +2,8 @@ import { promo_card } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 
-const Slider_Hero = () => {
+const Slider_Hero = (props) => {
+  const { title, desc } = props;
   return (
     <div className="flexStart gap-4 min-w-fit">
       <div className="bg-white px-6 py-5 rounded-[42px] flexCenter gap-4">
@@ -15,10 +16,8 @@ const Slider_Hero = () => {
           className="rounded-3xl object-cover object-center w-14 h-14"
         />
         <div className="max-w-[152px] flex flex-col ">
-          <span className="font-semibold text-biru-700">Profesional</span>
-          <p className="text-xs text-biru-100 leading-4">
-            Dikerjakan oleh orang-orang profesional
-          </p>
+          <span className="font-semibold text-biru-700">{title}</span>
+          <p className="text-xs text-biru-100 leading-4">{desc}</p>
         </div>
       </div>
     </div>

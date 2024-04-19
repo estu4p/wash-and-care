@@ -1,5 +1,5 @@
 import { icon_export } from "@/assets/icons";
-import { bg_vector1, bg_vector2, img_our_service } from "@/assets/images";
+import { bg_vector1, bg_vector2, img_our_treatment } from "@/assets/images";
 import Treatment from "@/components/Treatment";
 import {
   faAward,
@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
 
-const Our_service = () => {
+const Our_treatment = () => {
   return (
     <section className="relative max-container mt-[120px] w-full ">
       <div className="padding-container flex items-start flex-col gap-14 w-full lg:flexBetween lg:flex-row ">
@@ -61,8 +61,8 @@ const Our_service = () => {
         {/* right */}
         <div className="flexCenter w-full lg:justify-end">
           <Image
-            src={img_our_service}
-            alt="Image Our Service"
+            src={img_our_treatment}
+            alt="Image Our Treatment"
             width={528}
             height={459}
           />
@@ -89,4 +89,4 @@ const Our_service = () => {
   );
 };
 
-export default Our_service;
+export default Our_treatment;

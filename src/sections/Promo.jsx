@@ -42,7 +42,7 @@ const Promo = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="max-container mt-[120px] w-full mb-10">
+    <section className="max-container mt-[24px] w-full mb-10">
       <div className="padding-container mb-10">
         <div className="flex items-center gap-2 relative -left-3 lg:-left-12 top-0">
           <hr className="border-b-2 border-kuning-500 w-[42px]" />

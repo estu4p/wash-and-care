@@ -1,3 +1,5 @@
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -12,10 +14,12 @@ import {
   sponsor4,
 } from "@/assets/images";
 import Slider_Hero from "@/components/Slider_Hero";
+import "swiper/css";
+import { SLIDER_HERO } from "@/constants";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container w-full pt-28 md:pt-32 lg:p-0">
+    <section className="max-container padding-container w-full pt-28 md:pt-32 lg:p-0 ">
       <div className="flexCenter flex-col lg:flex-row lg:gap-[104px] lg:items-start">
         {/* left */}
         <div className="flexCenter flex-col lg:w-[70%] lg:ps-20 3xl:ps-0 lg:h-[620px] lg:mt-12">
@@ -68,10 +72,16 @@ const Hero = () => {
             className="w-full rounded-3xl object-cover object-center h-[452px] brightness-[0.85] md:h-[523px] lg:rounded-none lg:rounded-bl-[80px] lg:h-[620px]"
           />
           {/* Slider Hero */}
-          <div className="absolute bottom-9 left-12 flexStart gap-4 ">
-            <Slider_Hero />
-            <Slider_Hero />
-            <Slider_Hero />
+          <div className="relative bottom-32 left-0">
+            <div className="pl-12">
+              <Swiper spaceBetween={16}>
+                {SLIDER_HERO.map((item) => (
+                  <SwiperSlide key={item.key} className="max-w-fit">
+                    <Slider_Hero title={item.label} desc={item.desc} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
         <Image

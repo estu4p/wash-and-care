@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
-import Our_service from "@/sections/Our_service";
+import Our_Location from "@/sections/Our_Location";
+import Our_Service from "@/sections/Our_Service";
+import Our_Treatment from "@/sections/Our_Treatment";
 import Promo from "@/sections/Promo";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,7 +12,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Promo />
-      <Our_service />
+      <Our_Treatment />
+      <Our_Service />
+      <Our_Location />
+      <Footer />
     </main>
   );
 }
