@@ -42,7 +42,7 @@ const Promo = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="max-container mt-[24px] w-full mb-10">
+    <section className="max-container -mt-3 w-full mb-10 ">
       <div className="padding-container mb-10">
         <div className="flex items-center gap-2 relative -left-3 lg:-left-12 top-0">
           <hr className="border-b-2 border-kuning-500 w-[42px]" />
@@ -58,7 +58,7 @@ const Promo = () => {
           <ul className="flexCenter gap-8 font-medium text-lg">
             <Link
               href="/"
-              className="rounded-32 py-3 px-6 bg-hijau-200 text-hijau-700 md:min-w-[136px] text-center flexCenter gap-2"
+              className="rounded-32 py-3 px-6 bg-blue-200 text-biru-500 md:min-w-[136px] text-center flexCenter gap-2"
             >
               <FontAwesomeIcon icon={faTableList} className="w-5" />
               All
@@ -92,7 +92,7 @@ const Promo = () => {
             </button>
             <button
               onClick={handleNext}
-              className="bg-hijau-500 text-white rounded-32 w-[60px] h-[52px] flexCenter "
+              className="bg-blue-400 text-white rounded-32 w-[60px] h-[52px] flexCenter "
               disabled={slideBegOrNot.isLast}
             >
               <FontAwesomeIcon icon={faChevronRight} className="w-4" />

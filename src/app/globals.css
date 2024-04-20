@@ -6,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 @layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
   .flexCenter {
     @apply flex items-center justify-center;
   }

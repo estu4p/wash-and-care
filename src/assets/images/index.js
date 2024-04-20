@@ -6,12 +6,16 @@ import sponsor1 from "./traveloka_logo 2.png";
 import sponsor2 from "./traveloka_logo 3.png";
 import sponsor3 from "./traveloka_logo 4.png";
 import sponsor4 from "./traveloka_logo 5.png";
-import promo1 from "./promo.jpeg";
 import promo2 from "./Sport Shoe Cleaning.jpeg";
 import img_our_treatment from "./Img.png";
 import bg_vector1 from "./Vector.png";
 import bg_vector2 from "./Vector-1.png";
 import img_our_service from "./Rectangle 21.png";
+import img_gallery1 from "./file.png";
+import img_gallery2 from "./file1.png";
+import img_gallery3 from "./file2.png";
+import img_car1 from "./car1.png";
+import img_car2 from "./car2.png";
 
 export {
   logo,
@@ -22,10 +26,14 @@ export {
   sponsor2,
   sponsor3,
   sponsor4,
-  promo1,
   promo2,
   img_our_treatment,
   bg_vector1,
   bg_vector2,
   img_our_service,
+  img_gallery1,
+  img_gallery2,
+  img_gallery3,
+  img_car1,
+  img_car2,
 };

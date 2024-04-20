@@ -8,6 +8,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 6s linear infinite", //50
+        "loop-scroll-reverse": "loop-scroll-reverse 6s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "loop-scroll-reverse": {
+          // Set keyframes untuk animasi loop reverse
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,6 +32,7 @@ module.exports = {
         biru: {
           100: "#68799F",
           200: "#626687",
+          300: "#00ACD1",
           500: "#1D4ED8",
           700: "#1B1C57",
         },

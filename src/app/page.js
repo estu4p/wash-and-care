@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
+import Our_Galleries from "@/sections/Our_Galleries";
 import Our_Location from "@/sections/Our_Location";
 import Our_Service from "@/sections/Our_Service";
 import Our_Treatment from "@/sections/Our_Treatment";
@@ -14,6 +15,7 @@ export default function Home() {
       <Promo />
       <Our_Treatment />
       <Our_Service />
+      <Our_Galleries />
       <Our_Location />
       <Footer />
     </main>

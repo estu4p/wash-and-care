@@ -15,6 +15,8 @@ import {
 } from "@/assets/images";
 import Slider_Hero from "@/components/Slider_Hero";
 import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 import { SLIDER_HERO } from "@/constants";
 
 const Hero = () => {
@@ -36,7 +38,7 @@ const Hero = () => {
           <div className="flexCenter flex-col gap-3 w-full mt-8 lg:flex-row">
             <Link
               href="/"
-              className="py-4 w-full text-center rounded-32 bg-hijau-500 text-white font-semibold text-sm "
+              className="py-4 w-full text-center rounded-32 bg-blue-400 text-white font-semibold text-sm "
             >
               Order Now
             </Link>
@@ -72,11 +74,41 @@ const Hero = () => {
             className="w-full rounded-3xl object-cover object-center h-[452px] brightness-[0.85] md:h-[523px] lg:rounded-none lg:rounded-bl-[80px] lg:h-[620px]"
           />
           {/* Slider Hero */}
-          <div className="relative bottom-32 left-0">
-            <div className="pl-12">
-              <Swiper spaceBetween={16}>
+          <div className="relative bottom-32 left-0 w-full">
+            <div className="">
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={20}
+                centeredSlides={true}
+                pagination={{
+                  clickable: true,
+                }}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Pagination, Autoplay]}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  370: {
+                    slidesPerView: 1.2,
+                  },
+                  450: {
+                    slidesPerView: 1.5,
+                  },
+                  650: {
+                    slidesPerView: 2,
+                  },
+                  1200: {
+                    slidesPerView: 2.3,
+                  },
+                }}
+                className=""
+              >
                 {SLIDER_HERO.map((item) => (
-                  <SwiperSlide key={item.key} className="max-w-fit">
+                  <SwiperSlide key={item.key} className="mb-9 max-w-fit ">
                     <Slider_Hero title={item.label} desc={item.desc} />
                   </SwiperSlide>
                 ))}
