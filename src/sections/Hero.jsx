@@ -32,8 +32,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="mt-6 text-biru-100">
-            Kami melakukan perawatan secara profesional, dengan teknik khusus,
-            serta menggunakan alat dan bahan premium untuk melakukan perawatan.
+            Kami melakukan perawatan dan perbaikan secara professional dengan
+            teknik yang benar dan menggunakan alat bahan yang premium
           </p>
           <div className="flexCenter flex-col gap-3 w-full mt-8 lg:flex-row">
             <Link

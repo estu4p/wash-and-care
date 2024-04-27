@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "loop-scroll": "loop-scroll 6s linear infinite", //50
-        "loop-scroll-reverse": "loop-scroll-reverse 6s linear infinite",
+        "loop-scroll": "loop-scroll 40s linear infinite", //50
+        "loop-scroll-reverse": "loop-scroll-reverse 40s linear infinite",
       },
       keyframes: {
         "loop-scroll": {

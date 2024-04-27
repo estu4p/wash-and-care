@@ -2,7 +2,7 @@ import React from "react";
 
 const Our_Location = () => {
   return (
-    <section className="max-container padding-container mt-[120px]">
+    <section className="max-container padding-container mt-28 mb-[120px]">
       <div className="">
         {/* top */}
         <div className="flexCenter flex-col">

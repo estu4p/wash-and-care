@@ -16,6 +16,8 @@ import img_gallery2 from "./file1.png";
 import img_gallery3 from "./file2.png";
 import img_car1 from "./car1.png";
 import img_car2 from "./car2.png";
+import cleaningShoes from "./cleaning_shoes.jpeg";
+import nike_blue from "./img_nike_blue.jpeg";
 
 export {
   logo,
@@ -36,4 +38,6 @@ export {
   img_gallery3,
   img_car1,
   img_car2,
+  cleaningShoes,
+  nike_blue,
 };

@@ -32,7 +32,7 @@ const Our_treatment = () => {
           </p>
           <span className="font-semibold text-biru-200">Our Treatment</span>
           <div className="flexBetween mt-4 max-[570px]:w-full w-2/3 lg:w-5/6 mx-auto flex-wrap ">
-            <div className="flexBetween flex-col gap-6 mx-auto sm:mx-0 mb-6 min-[368px]:mb-0">
+            <div className="flexBetween flex-col gap-[36px] max-[367px]:gap-6 mx-auto sm:mx-0 mb-6 min-[368px]:mb-0">
               <Treatment
                 icon={faMedal}
                 title={"Expert Team"}
@@ -69,7 +69,7 @@ const Our_treatment = () => {
         </div>
       </div>
       {/* background */}
-      <div className="absolute -top-60 md:-top-56 -right-44 ">
+      <div className="absolute -top-60 md:-top-56 max-sm:-right-56 -right-44 ">
         <Image
           src={bg_vector1}
           alt="bg blue blue"

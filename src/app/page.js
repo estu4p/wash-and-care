@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Article from "@/sections/Article";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import Our_Galleries from "@/sections/Our_Galleries";
@@ -15,8 +16,9 @@ export default function Home() {
       <Promo />
       <Our_Treatment />
       <Our_Service />
-      <Our_Galleries />
       <Our_Location />
+      <Our_Galleries />
+      <Article />
       <Footer />
     </main>
   );
