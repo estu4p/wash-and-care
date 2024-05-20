@@ -77,7 +77,7 @@ const AboutUsPage = () => {
           <h3 className="font-bold text-5xl capitalize text-white">
             Hubungi Kami
           </h3>
-          <div className="flexCenter gap-6 text-white mt-9 text-lg">
+          <div className="flexCenter flex-wrap gap-6 text-white mt-9 text-lg">
             <div className="">
               <FontAwesomeIcon icon={faEnvelope} width={32} height={32} />
               <span>washandcare@mail.com</span>

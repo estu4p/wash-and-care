@@ -16,7 +16,7 @@ const page = () => {
         <h1 className="text-biru-700 leading-[1.5] text-4xl font-medium mt-6 capitalize">
           Tips Agar Warna Sepatu Kanvas Tidak Pudar!
         </h1>
-        <p className="text-gray-600 leading-[1.6] font-light mt-5 mb-3">
+        <p className="text-gray-600 leading-[1.8] font-light mt-5 mb-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
           adipisci! Facere nisi eligendi maxime ea esse, odit non omnis
           excepturi, in enim quasi, dolore deserunt repudiandae nulla aspernatur
@@ -28,7 +28,7 @@ const page = () => {
           className="w-[730px] h-[350px] lg:h-[410px] object-cover object-center rounded-xl mt-12"
         />
         <div className="text-justify mt-8">
-          <p className="text-gray-600 leading-[1.6] font-light">
+          <p className="text-gray-600 leading-[1.8] font-light">
             3 Cara Terbaik Mengembalikan Suede yang Mengeras – Bahan suede
             memang selalu menjadi pilhan bagi kalian yang ingin tampil beda.
             Namun perawatan yang tidak mudah pada bahan suede sepertinya sudah
@@ -44,7 +44,7 @@ const page = () => {
           <h2 className="text-biru-700 font-medium text-2xl mt-6">
             1. Eraser Suede
           </h2>
-          <p className="text-gray-600 leading-[1.6] font-light mt-2">
+          <p className="text-gray-600 leading-[1.8] font-light mt-2">
             Penggunaan eraser suede memang dianjurkan dalam proses membersihkan
             kotoran atau noda gelap pada bagian-bagian tertentu. Proses ini
             membutuhkan kesabaran dalam pengerjaannya agar dapat maksimal.
@@ -54,7 +54,7 @@ const page = () => {
           <h2 className="text-biru-700 font-medium text-2xl mt-6">
             2. Spons Suede Spons
           </h2>
-          <p className="text-gray-600 leading-[1.6] font-light mt-2">
+          <p className="text-gray-600 leading-[1.8] font-light mt-2">
             suede bisa menjadi alat untuk mengeluarkan kotoran yang mengendap.
             Proses tersebut dilakukan secara perlahan. Fungsi lain dari spons
             suede itu sendiri dapat mengembalikan suede yang mengeras akibat
@@ -72,7 +72,7 @@ const page = () => {
           <h2 className="text-biru-700 font-medium text-2xl mt-6">
             3. Nail Buffer
           </h2>
-          <p className="text-gray-600 leading-[1.6] font-light mt-2">
+          <p className="text-gray-600 leading-[1.8] font-light mt-2">
             Yang satu ini mungkin tidak asing bagi kaum hawa ya. Tapi jangan
             salah, barang ini dapat digunakan bagi kalian yang sedang mencari
             cara mengembalikan bahan suede yang sudah mengeras. Barang ini bisa
