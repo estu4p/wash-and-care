@@ -1,9 +1,9 @@
 import { space } from "postcss/lib/list";
 
 export const NAV_LINKS = [
-  { href: "#", key: "about_us", label: "About Us" },
-  { href: "#", key: "article", label: "Article" },
-  { href: "#", key: "property", label: "Property" },
+  { href: "#", key: "property", label: "Galeri" },
+  { href: "/article", key: "article", label: "Artikel" },
+  { href: "/aboutUs", key: "about_us", label: "Tentang Kami" },
 ];
 
 export const SLIDER_HERO = [
@@ -39,7 +39,6 @@ export const FOOTER_LINKS = [
   {
     type: "Learn More",
     link: [
-      { href: "#", key: "about_us", label: "About Wash & Care" },
       { href: "#", key: "environment", label: "Environment" },
       { href: "#", key: "press_releases", label: "Press Releases" },
       { href: "#", key: "jobs", label: "Jobs" },
@@ -49,8 +48,8 @@ export const FOOTER_LINKS = [
   {
     type: "Information",
     link: [
-      { href: "#", key: "about_us", label: "About Us" },
-      { href: "#", key: "article", label: "Article" },
+      { href: "/aboutUs", key: "about_us", label: "About Us" },
+      { href: "/article", key: "article", label: "Article" },
       { href: "#", key: "property", label: "Property" },
     ],
   },

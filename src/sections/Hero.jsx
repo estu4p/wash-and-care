@@ -57,10 +57,34 @@ const Hero = () => {
           <div className="mt-8 w-full">
             <span className="text-biru-200">Our Sponsorship</span>
             <div className="flexStart gap-x-8 flex-wrap">
-              <Image src={sponsor1} alt="sponsor 1" width={83} height={64} />
-              <Image src={sponsor2} alt="sponsor 2" width={83} height={64} />
-              <Image src={sponsor3} alt="sponsor 3" width={83} height={64} />
-              <Image src={sponsor4} alt="sponsor 4" width={83} height={64} />
+              <Image
+                src={sponsor1}
+                alt="sponsor 1"
+                width={83}
+                height={64}
+                className="w-[83px] h-16"
+              />
+              <Image
+                src={sponsor2}
+                alt="sponsor 2"
+                width={83}
+                height={64}
+                className="w-[83px] h-16"
+              />
+              <Image
+                src={sponsor3}
+                alt="sponsor 3"
+                width={83}
+                height={64}
+                className="w-[83px] h-16"
+              />
+              <Image
+                src={sponsor4}
+                alt="sponsor 4"
+                width={83}
+                height={64}
+                className="w-[83px] h-16"
+              />
             </div>
           </div>
         </div>
@@ -119,9 +143,7 @@ const Hero = () => {
         <Image
           src={bg_hero}
           alt="background hero"
-          width={741}
-          height={523}
-          className="absolute top-0 left-0 -z-30"
+          className="absolute top-0 left-0 -z-30 w-[741px] h-[523px]"
         />
       </div>
     </section>

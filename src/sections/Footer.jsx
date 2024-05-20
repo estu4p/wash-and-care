@@ -12,12 +12,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="max-container padding-container mt-[120px] mb-24">
+    <footer className="max-container padding-container mt-[120px] mb-8">
       <div className="flex items-start justify-between flex-wrap ">
         {/* left */}
         <div className="text-start max-w-80 mb-14 ">
           <Link href="/" className="flexStart gap-3 ">
-            <Image src={logo} alt="Logo WNC" width={48} height={48} />
+            <Image src={logo} alt="Logo WNC" className="w-12 h-12" />
             <span className="font-bold text-xl text-biru-700">Wash & Care</span>
           </Link>
           <p className="text-sm text-biru-100 mt-6 mb-10 leading-6">

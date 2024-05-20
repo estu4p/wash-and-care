@@ -32,7 +32,7 @@ const Our_treatment = () => {
           </p>
           <span className="font-semibold text-biru-200">Our Treatment</span>
           <div className="flexBetween mt-4 max-[570px]:w-full w-2/3 lg:w-5/6 mx-auto flex-wrap ">
-            <div className="flexBetween flex-col gap-[36px] max-[367px]:gap-6 mx-auto sm:mx-0 mb-6 min-[368px]:mb-0">
+            <div className="flexBetween flex-col gap-6 mx-auto sm:mx-0 mb-6 min-[368px]:mb-0">
               <Treatment
                 icon={faMedal}
                 title={"Expert Team"}
@@ -63,8 +63,7 @@ const Our_treatment = () => {
           <Image
             src={img_our_treatment}
             alt="Image Our Treatment"
-            width={528}
-            height={459}
+            className="w-[528px] h-[459px]"
           />
         </div>
       </div>
@@ -75,14 +74,14 @@ const Our_treatment = () => {
           alt="bg blue blue"
           width={438}
           height={494}
-          className="relative top-0 -z-50 "
+          className="relative top-0 -z-50 w-[438px] h-[494px]"
         />
         <Image
           src={bg_vector2}
           alt="bg blue blue"
           width={438}
           height={494}
-          className="absolute top-28 lg:top-44 -z-40 "
+          className="absolute top-28 lg:top-44 -z-40 w[438px] h-[494px]"
         />
       </div>
     </section>

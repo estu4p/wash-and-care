@@ -1,5 +1,6 @@
 import { nike_blue } from "@/assets/images";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Article = () => {
@@ -21,9 +22,12 @@ const Article = () => {
             <p className="text-biru-100 my-4 w-3/4 leading-tight md:leading-6 min-w-72 ">
               Temukan artikel terbaru mengenai sepatu dan perawatannya
             </p>
-            <span className="font-semibold text-kuning-500 underline underline-offset-[6px] cursor-pointer text-end min-w-fit ">
+            <Link
+              href="/article"
+              className="font-semibold text-kuning-500 underline underline-offset-[6px] cursor-pointer text-end min-w-fit "
+            >
               Lihat semua
-            </span>
+            </Link>
           </div>
         </div>
         {/* bottom */}
