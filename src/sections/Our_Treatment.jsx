@@ -63,7 +63,7 @@ const Our_treatment = () => {
           <Image
             src={img_our_treatment}
             alt="Image Our Treatment"
-            className="w-[528px] h-[459px]"
+            className="w-[528px] h-[380px] lg:h-[459px] object-cover object-center"
           />
         </div>
       </div>
