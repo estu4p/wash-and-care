@@ -1,7 +1,14 @@
 import { space } from "postcss/lib/list";
 
 export const NAV_LINKS = [
-  { href: "#", key: "property", label: "Galeri" },
+  { href: "/gallery", key: "gallery", label: "Galeri" },
+  { href: "/article", key: "article", label: "Artikel" },
+  { href: "/aboutUs", key: "about_us", label: "Tentang Kami" },
+];
+
+export const NAV_LINKS_2 = [
+  { href: "/", key: "beranda", label: "Beranda" },
+  { href: "/gallery", key: "gallery", label: "Galeri" },
   { href: "/article", key: "article", label: "Artikel" },
   { href: "/aboutUs", key: "about_us", label: "Tentang Kami" },
 ];
@@ -48,9 +55,9 @@ export const FOOTER_LINKS = [
   {
     type: "Information",
     link: [
-      { href: "/aboutUs", key: "about_us", label: "About Us" },
-      { href: "/article", key: "article", label: "Article" },
-      { href: "#", key: "property", label: "Property" },
+      { href: "/aboutUs", key: "tentang_kami", label: "Tentang Kami" },
+      { href: "/article", key: "artikel", label: "Artikel" },
+      { href: "/gallery", key: "galeri", label: "Galeri" },
     ],
   },
   {

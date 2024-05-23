@@ -29,9 +29,9 @@ const Card_Promo = (props) => {
       <div className="w-full flexStart mt-3">
         <Link
           href="#"
-          className="bg-biru-700 text-white font-medium text-center rounded-lg py-2 mt-3 w-2/5"
+          className="bg-biru-700 text-white font-medium text-center rounded-lg py-2 px-3 mt-3"
         >
-          See Promo
+          Lihat Promo
         </Link>
       </div>
     </div>

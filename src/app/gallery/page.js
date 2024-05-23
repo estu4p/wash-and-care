@@ -1,12 +1,12 @@
 import Footer from "@/sections/Footer";
 import Nav from "../article/components/Nav";
-import AboutUsPage from "./AboutUs";
+import GalleriesPage from "./GalleriesPage";
 
-export default function aboutUs() {
+export default function galleries() {
   return (
     <main className="relative overflow-hidden">
       <Nav />
-      <AboutUsPage />
+      <GalleriesPage />
       <Footer />
     </main>
   );

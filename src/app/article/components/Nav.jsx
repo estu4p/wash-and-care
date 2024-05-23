@@ -5,6 +5,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { NAV_LINKS_2 } from "@/constants";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -56,15 +57,11 @@ const Nav = () => {
             <span className="font-bold text-xl text-biru-700">Wash & Care</span>
           </Link>
           <ul className="hidden lg:flex gap-6 text-biru-700">
-            <li className="cursor-pointer">
-              <Link href="/">Beranda</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/">Galeri</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/aboutUs">Tentang Kami</Link>
-            </li>
+            {NAV_LINKS_2.map((link) => (
+              <li className="cursor-pointer" key={link.key}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
           </ul>
           <FontAwesomeIcon
             onClick={handleNav}
@@ -77,7 +74,7 @@ const Nav = () => {
       <nav
         className={
           nav
-            ? "fixed top-0 left-0 right-0 w-full min-h-1/2 shadow-lg bg-white z-50 ease-in-out transition-all duration-300"
+            ? "fixed top-0 left-0 right-0 w-full h-fit shadow-lg bg-white z-50 ease-in-out transition-all duration-300"
             : "ease-in-out transition-all duration-300 fixed left-0 right-0 top-[-100%]"
         }
       >
@@ -95,22 +92,14 @@ const Nav = () => {
               className="text-biru-700 w-7 h-7 lg:hidden cursor-pointer"
             />
           </div>
-          <div className="flex flex-col gap-6 mt-6 mb-10">
-            <div className="flexBetween flex-col gap-14">
-              <ul className="flexBetween flex-col gap-4 font-semibold text-biru-700 text-sm">
-                {/* <ul className="hidden lg:flex gap-6 text-biru-700"> */}
-                <li className="cursor-pointer">
-                  <Link href="/">Beranda</Link>
+          <div className=" mb-10 w-full h-[50vh]">
+            <ul className="flex items-center justify-evenly h-full flex-col font-semibold text-biru-700 text-lg">
+              {NAV_LINKS_2.map((link) => (
+                <li className="cursor-pointer" key={link.key}>
+                  <Link href={link.href}>{link.label}</Link>
                 </li>
-                <li className="cursor-pointer">
-                  <Link href="/">Galeri</Link>
-                </li>
-                <li className="cursor-pointer">
-                  <Link href="/aboutUs">Tentang Kami</Link>
-                </li>
-                {/* </ul> */}
-              </ul>
-            </div>
+              ))}
+            </ul>
           </div>
         </div>
       </nav>

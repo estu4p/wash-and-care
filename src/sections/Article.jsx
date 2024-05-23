@@ -12,7 +12,7 @@ const Article = () => {
           <div className="flex items-center gap-2 relative -left-3 lg:-left-12 top-0 mb-3">
             <hr className="border-b-2 border-kuning-500 w-[42px]" />
             <span className="text-kuning-500 font-medium capitalize">
-              latest article
+              artikel terbaru
             </span>
           </div>
           <h2 className="font-semibold text-[32px] text-biru-700 capitalize leading-tight">
@@ -33,7 +33,10 @@ const Article = () => {
         {/* bottom */}
         <div className="flexCenter flex-wrap gap-8">
           {Array.from({ length: 3 }).map((_, index) => (
-            <div className="w-[340px] shadow-lg px-4 py-6 rounded-xl">
+            <div
+              className="w-[340px] shadow-lg px-4 py-6 rounded-xl"
+              key={index}
+            >
               <Image
                 src={nike_blue}
                 alt="article nike"

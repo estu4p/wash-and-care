@@ -20,17 +20,17 @@ const Our_treatment = () => {
           <div className="flex items-center gap-2 relative -left-3 lg:-left-12 top-0 mb-3">
             <hr className="border-b-2 border-kuning-500 w-[42px]" />
             <span className="text-kuning-500 font-medium capitalize">
-              this is our team
+              ini tim kami
             </span>
           </div>
           <h2 className="font-semibold text-[32px] text-biru-700 capitalize leading-tight">
-            how our team works
+            Bagaimana Tim Kami Bekerja
           </h2>
           <p className="text-biru-100 my-4 sm:w-2/3 lg:w-full leading-tight md:leading-6">
             Kami melakukan perawatan dan perbaikan barang kesayangan anda secara
             profesional dan terpercaya.
           </p>
-          <span className="font-semibold text-biru-200">Our Treatment</span>
+          {/* <span className="font-semibold text-biru-200">Layanan Kami</span> */}
           <div className="flexBetween mt-4 max-[570px]:w-full w-2/3 lg:w-5/6 mx-auto flex-wrap ">
             <div className="flexBetween flex-col gap-6 mx-auto sm:mx-0 mb-6 min-[368px]:mb-0">
               <Treatment

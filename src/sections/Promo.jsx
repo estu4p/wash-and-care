@@ -47,7 +47,7 @@ const Promo = () => {
         <div className="flex items-center gap-2 relative -left-3 lg:-left-12 top-0">
           <hr className="border-b-2 border-kuning-500 w-[42px]" />
           <span className="text-kuning-500 font-medium capitalize">
-            best offer for you
+            Penawaran Terbaik Untuk Anda
           </span>
         </div>
         <div className="flexBetween w-full flex-wrap lg:flex-nowrap">

@@ -50,7 +50,7 @@ const Hero = () => {
                 icon={faLocationDot}
                 className="w-5 text-kuning-500"
               />
-              Location
+              Lokasi
             </Link>
           </div>
           {/* our sponsorship */}
@@ -103,6 +103,7 @@ const Hero = () => {
               <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
+                loop={true}
                 centeredSlides={true}
                 pagination={{
                   clickable: true,

@@ -8,7 +8,7 @@ const Our_Location = () => {
         <div className="flexCenter flex-col">
           <hr className="border-b-2 border-kuning-500 w-[48px]" />
           <span className="text-kuning-500 font-medium capitalize mt-1">
-            our location
+            lokasi kami
           </span>
         </div>
         {/* bottom */}

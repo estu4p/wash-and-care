@@ -33,11 +33,8 @@ const Footer = () => {
         {/* right */}
         <div className="flex flex-wrap gap-x-20 gap-y-10 ">
           {FOOTER_LINKS.map((item) => (
-            <div className="h-auto">
-              <h4
-                key={item.type}
-                className="font-semibold text-biru-700 text-lg capitalize"
-              >
+            <div className="h-auto" key={item.type}>
+              <h4 className="font-semibold text-biru-700 text-lg capitalize">
                 {item.type}
               </h4>
               {item.link.map((item) => (
